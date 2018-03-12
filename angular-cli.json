@@ -1,6 +1,5 @@
 {
   "project": {
-    "version": "1.0.0-beta.28.3",
     "name": "brestov-redesign"
   },
   "apps": [
@@ -18,15 +17,18 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
         "../node_modules/font-awesome/css/font-awesome.css",
+        "../node_modules/startbootstrap-small-business/vendor/bootstrap/css/bootstrap.css",
         "styles.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
-        "../node_modules/bootstrap/dist/js/bootstrap.min.js"],
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "../node_modules/startbootstrap-small-business/vendor/jquery/jquery.min.js"
+      ],
+      "environmentSource": "environments/environment.ts",
       "environments": {
-        "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       }
@@ -54,18 +56,13 @@
   },
   "defaults": {
     "styleExt": "css",
-    "prefixInterfaces": false,
-    "inline": {
-      "style": false,
-      "template": false
+    "class": {
+      "spec": false
     },
-    "spec": {
-      "class": false,
-      "component": true,
-      "directive": true,
-      "module": false,
-      "pipe": true,
-      "service": true
+    "component": {
+      "spec": true,
+      "inlineStyle": false,
+      "inlineTemplate": false
     }
   }
 }

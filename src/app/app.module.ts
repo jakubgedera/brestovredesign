@@ -12,7 +12,7 @@ import { ContactComponent } from './components/contact-page/contact.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PortfolioComponent } from './components/portfolio-page/portfolio-page.component';
-
+import { Ng2PageScrollModule } from 'ng2-page-scroll';
 
 
 @NgModule({
@@ -30,7 +30,8 @@ import { PortfolioComponent } from './components/portfolio-page/portfolio-page.c
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    Ng2PageScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

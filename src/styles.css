@@ -14,3 +14,13 @@ body {
     padding-top: 56px;
   }
 }
+
+p {
+  text-align: justify;
+}
+
+  /*
+  bootstrap override
+   */
+
+
